@@ -4,34 +4,69 @@
 ### Anggota Kelompok 
 Christoba Joshua Hutagalung - 2311102133 <br/>
 Adam Surya Sarwono - 2311102112 <br/>
-Kelas S1IF-11-04 <br/>
+Kelas IF-11-04 <br/>
 Telkom University Purwokerto <br/>
 
-### Dasar Teori Algoritma Search
-Searching (pencarian) pada struktur data mengacu pada proses algoritmik untuk memeriksa, menemukan, mengambil posisi elemen tertentu (target) dari kumpulan elemen di dalam struktur data. Kumpulan elemen dapat berupa array, list, linked list, tree, dan lain sebagainya.
-Berdasarkan jenis operasinya, dua algoritma pencarian yaitu Sequential Search dan Binary Search pada data array.
-### Sequential search <br/>
-Sequential Search (pencarian berurutan) dikenal juga sebagai pencarian linier. Sequential Search merupakan algoritma pencarian paling dasar dan paling sederhana yang bekerja menggunakan pendekatan brute force, mencoba segala kemungkinan yang ada hingga target yang diinginkan ditemukan. 
-Sebagai contoh, mencari nilai 36 dari data array {12, 7, 30, 28, 2, 19, 36, 21, 16, 9}. Sequential Search dimulai dengan membandingkan/mencocokkan 36 dengan elemen pertama/index[0] yaitu 12, karena 12 tidak sesuai dengan kriteria pencarian (12 != 36) maka dilanjutkan dengan membandingkan 36 
-dengan elemen berikutnya hingga ditemukan elemen yang cocok, yaitu pada index[6] dimana 36 == 36.
+### Dasar Teori Searching
+Searching (pencarian) pada struktur data mengacu pada proses algoritmik untuk memeriksa, menemukan, mengambil posisi elemen tertentu (target) dari kumpulan elemen di dalam struktur data. Kumpulan elemen dapat berupa array, list, linked list, tree, dan lain sebagainya. Berdasarkan jenis operasinya, dua algoritma pencarian yaitu Sequential Search dan Binary Search pada data array.
 
-Cara kerja sequential search Algoritma dimulai dengan membandingkan elemen pertama dengan elemen yang dicari. Jika cocok, pencarian selesai.Jika tidak, ia akan terus memeriksa elemen berikutnya sampai menemukan elemen yang dicari atau mencapai akhir kumpulan data.lalu sequential search memilikki 
-kekurangan seperti kurang efisien untuk kumpulan data besar karena memerlukan pemeriksaan setiap elemen dalam kumpulan data, bahkan jika elemen yang dicari ada di awal kumpulan data.
-Berikut adalah konsep dasar dan langkah-langkah implementasi Sequential Search:
-A.Konsep Dasar:
+### 1.Sequential search<br>
+Sequential Search (pencarian berurutan) dikenal juga sebagai pencarian linier. Sequential Search merupakan algoritma pencarian paling dasar dan paling sederhana yang bekerja menggunakan pendekatan brute force, mencoba segala kemungkinan yang ada hingga target yang diinginkan ditemukan. Sebagai contoh, mencari nilai 36 dari data array {12, 7, 30, 28, 2, 19, 36, 21, 16, 9}. Sequential Search dimulai dengan membandingkan/mencocokkan 36 dengan elemen pertama/index[0] yaitu 12, karena 12 tidak sesuai dengan kriteria pencarian (12 != 36) maka dilanjutkan dengan membandingkan 36 dengan elemen berikutnya hingga ditemukan elemen yang cocok, yaitu pada index[6] dimana 36 == 36.<br>
+![Ilustrasi searching 1](ssilustrasisearching1.png)<br>
+Cara kerja sequential search Algoritma dimulai dengan membandingkan elemen pertama dengan elemen yang dicari. Jika cocok, pencarian selesai.Jika tidak, ia akan terus memeriksa elemen berikutnya sampai menemukan elemen yang dicari atau mencapai akhir kumpulan data.lalu sequential search memilikki kekurangan seperti kurang efisien untuk kumpulan data besar karena memerlukan pemeriksaan setiap elemen dalam kumpulan data, bahkan jika elemen yang dicari ada di awal kumpulan data.Berikut adalah konsep dasar dan langkah-langkah implementasi Sequential Search:<br>
 
-    Pencarian Berurutan: Algoritma Sequential Search melakukan pencarian satu per satu dari awal hingga akhir kumpulan data.
-    Metode Brute Force: Ini adalah pendekatan brute force di mana algoritma mencoba semua kemungkinan sampai elemen yang dicari ditemukan.
-    Kompleksitas Waktu: Kompleksitas waktu dari Sequential Search adalah O(n), di mana n adalah jumlah elemen dalam kumpulan data.
+#### A.Konsep Dasar:
+- Pencarian Berurutan: Algoritma Sequential Search melakukan pencarian satu per satu dari awal hingga akhir kumpulan data.<br>
+- Metode Brute Force: Ini adalah pendekatan brute force di mana algoritma mencoba semua kemungkinan sampai elemen yang dicari ditemukan.<br>
+- Kompleksitas Waktu: Kompleksitas waktu dari Sequential Search adalah O(n), di mana n adalah jumlah elemen dalam kumpulan data.<br>
 
-B.Langkah-langkah Implementasi:
+#### B.Langkah-langkah Implementasi:<br>
+- 1.Inisialisasi indeks pencarian:
+- 2.Memulai perulangan untuk memeriksa setiap elemen dalam kumpulan data.
+- 3.Membandingkan elemen yang sedang diperiksa dengan elemen yang dicari.
+- 4.Jika elemen yang sedang diperiksa cocok dengan elemen yang dicari, pencarian selesai, dan indeks elemen tersebut dikembalikan.
+- 5.Jika tidak, lanjutkan perulangan untuk memeriksa elemen berikutnya.
+- 6.Jika seluruh kumpulan data telah diperiksa dan elemen yang dicari tidak ditemukan, kembalikan nilai yang menunjukkan bahwa elemen tidak ada dalam kumpulan data.
 
-    1.Inisialisasi indeks pencarian:
-    2.Memulai perulangan untuk memeriksa setiap elemen dalam kumpulan data.
-    3.Membandingkan elemen yang sedang diperiksa dengan elemen yang dicari.
-    4.Jika elemen yang sedang diperiksa cocok dengan elemen yang dicari, pencarian selesai, dan indeks elemen tersebut dikembalikan.
-    5.Jika tidak, lanjutkan perulangan untuk memeriksa elemen berikutnya.
-    6.Jika seluruh kumpulan data telah diperiksa dan elemen yang dicari tidak ditemukan, kembalikan nilai yang menunjukkan bahwa elemen tidak ada dalam kumpulan data.
+### Pengertian Fungsi Rekursif :<br>
+Rekursif adalah suatu proses atau prosedur dari fungsi yang memanggil dirinya sendiri secara berulang-ulang. Karena proses dalam Rekursif ini terjadi secara berulang-ulang maka harus ada kondisi yang membatasi pengulangan persebut, jika tidak maka proses tidak akan pernah berhenti sampai memori yang digunakan untuk menampung proses tersebut tidak dapat menampung lagi (Penuh).<br>
+### Pengertian Fungsi Iteratif :<br>
+Berbeda dengan Rekurif, Fungi Iteratif merupakan perulangan yang melakukan proses perulangan terhadap sekelompok intruksi. Perulangan dilakukan dalam batasan syarat tertentu. Ketika syarat tersebut tidak terpenuhi lagi maka perulangan akan terhenti.<br>
+
+### Kelebihan dan Kekurangan Fungsi Rekursif dan Iteratif<br>
+#### Kelebihan Fungsi Rekursif :
+1.    Sangat mudah untuk melakukan perulangan dengan batasan yang luas dalam artian melakukan
+       perulangan dalam skala yang besar.
+2.    Dapat melakukan perulangan dengan batasan fungsi
+
+#### Kekurangan Funngsi Rekursif :
+1.    Tidak bisa melakukan nested loop atau looping bersarang
+2.    Biasanya membuat fungsi sulit untuk dipahami, hanya cocok untuk persoalan tertentu saja
+3.    Memerlukan stack yang lebih besar, sebab setiap kali fungsi dipanggil, variabel lokal dan
+       parameter formal akan ditempatkan ke stack dan ada kalaya akan menyebabkan stack tak cukup
+       lagi (Stack Overum)
+4.    Proses agak berbelit-belit karena terdapat pemangilan fungsi yang berulang-ulang dan
+       pemanggilan data yang ditumpuk<br>
+
+#### Kelebihan Fungsi Iteratif :
+1.    Mudah dipahami dan mudah dilakukan debuging ketika ada perulangan yang salah
+2.    Dapat melakukan nested loop atau yang disebut dengan looping bersarang
+3.    Proses lebih singkat karena perulangan terjadi pada kondisi yang telah disesuaikan
+4.    Jarang terjadi overflow karena batasan dan syarat perulangan yang jelas
+
+#### Kekurangan Fungsi Iteratif :
+1.    Tidak dapat menggunakan batasan berupa fungsi
+2.    Perulangan dengan batasan yang luas akan menyulitkan dalam pembuatan program perulangan
+       itu sendiri.<br>
+
+### Perbedaaan dan Persamaan Fungsi Rekursif dan Iteratif
+#### Persamaan
+1.    Sama-sama merupakan bentuk perulangan.
+2.    Dilakukan pengecekan kondisi terlebih dahulu sebelum mengulang.
+#### Perbedaan
+1.    Iteratif menggunakan FOR, WHILE, DO-WHILE sedangkan rekursif hanya menggunakan IF.
+2.    Iteratif dapat berjalan pada program yang terdiri dari prosedur (Tidak terdapat fungsi) sedangkan
+       rekursif merupakan fungsi.<br>
 
 ### Algoritma Search menggunakan Sequential Search secara Iteratif
 ```C++
@@ -189,5 +224,6 @@ int main() {
 ![Output_Rekursif](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Output_Rekursif.png)
 
 ### Analisis
+Hasil menunjukkan bahwa pencarian iteratif lebih cepat saat mencari produk di awal dataset, seperti "Laptop" karena tidak ada overhead pemanggilan fungsi. Namun, rekursif unggul dalam pencarian elemen di tengah atau akhir dataset, seperti "Mouse" karena pemrosesan dilakukan melalui struktur stack tanpa loop eksplisit. Kedua metode memiliki kompleksitas waktu O(n), tetapi performa dipengaruhi oleh posisi elemen dalam array dan overhead operasional.<br>
 Berikut merupakan analisis diagram batang perbandingan Algoritma Pencarian Tercepat Dalam Aplikasi E-commerce secara iteratif dan rekursif
 ![Diagram Batang.png](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Diagram%20Batang.png)
