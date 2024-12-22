@@ -110,7 +110,7 @@ int main() {
 }
 ```
 ### Output Kodenya:
-![Output_Iteratif]
+![Output_Iteratif](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Output_Iteratif.png)
 ### Algoritma Search menggunakan Sequential Search secara Rekursif
 ```C++
 #include <iostream>
@@ -186,4 +186,8 @@ int main() {
 }
 ```
 ### Output Kodenya:
+![Output_Rekursif](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Output_Rekursif.png)
 
+### Analisis
+Berikut merupakan analisis diagram batang perbandingan Algoritma Pencarian Tercepat Dalam Aplikasi E-commerce secara iteratif dan rekursif
+![Diagram Batang.png](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Diagram%20Batang.png)
