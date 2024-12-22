@@ -224,6 +224,8 @@ int main() {
 ![Output_Rekursif](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Output_Rekursif.png)
 
 ### Analisis
-Hasil menunjukkan bahwa pencarian iteratif lebih cepat saat mencari produk di awal dataset, seperti "Laptop" karena tidak ada overhead pemanggilan fungsi. Namun, rekursif unggul dalam pencarian elemen di tengah atau akhir dataset, seperti "Mouse" karena pemrosesan dilakukan melalui struktur stack tanpa loop eksplisit. Kedua metode memiliki kompleksitas waktu O(n), tetapi performa dipengaruhi oleh posisi elemen dalam array dan overhead operasional.<br>
+Hasil eksperimen menunjukkan bahwa pencarian iteratif lebih cepat ketika mencari elemen yang terletak di awal dataset, seperti "Laptop". Hal ini disebabkan karena pendekatan iteratif tidak melibatkan overhead tambahan dari pemanggilan fungsi, yang membuatnya lebih efisien untuk elemen-elemen yang berada lebih dekat dengan indeks pertama.<br>
+Di sisi lain, pencarian rekursif lebih unggul saat mencari elemen yang terletak di tengah atau akhir dataset, seperti "Mouse". Ini karena rekursi mengelola pemrosesan melalui struktur stack yang secara otomatis menangani iterasi tanpa memerlukan loop eksplisit. Meskipun demikian, penggunaan stack dalam rekursi dapat menambah sedikit overhead dibandingkan dengan pendekatan iteratif.<br>
+Kedua metode memiliki kompleksitas waktu O(n), tetapi performanya dapat bervariasi tergantung pada posisi elemen dalam array. Pencarian iteratif cenderung lebih efisien untuk elemen-elemen yang lebih dekat ke awal, sementara pencarian rekursif memberikan keuntungan untuk elemen-elemen yang lebih dalam dalam array meski ada sedikit tambahan overhead operasional.<br>
 Berikut merupakan analisis diagram batang perbandingan Algoritma Pencarian Tercepat Dalam Aplikasi E-commerce secara iteratif dan rekursif
 ![Diagram Batang.png](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Diagram%20Batang.png)
