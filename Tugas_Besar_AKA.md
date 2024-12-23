@@ -229,3 +229,13 @@ Di sisi lain, pencarian rekursif lebih unggul saat mencari elemen yang terletak 
 Kedua metode memiliki kompleksitas waktu O(n), tetapi performanya dapat bervariasi tergantung pada posisi elemen dalam array. Pencarian iteratif cenderung lebih efisien untuk elemen-elemen yang lebih dekat ke awal, sementara pencarian rekursif memberikan keuntungan untuk elemen-elemen yang lebih dalam dalam array meski ada sedikit tambahan overhead operasional.<br>
 Berikut merupakan analisis diagram batang perbandingan Algoritma Pencarian Tercepat Dalam Aplikasi E-commerce secara iteratif dan rekursif
 ![Diagram Batang.png](https://github.com/adamsuryasarwono/Tubes_AKA/blob/main/Images/Diagram%20Batang.png)
+
+### Kesimpulan
+Penelitian oleh Lutfina, Inayati, & Saraswati (2022) menunjukkan bahwa dalam konteks algoritma linear search untuk pencarian data, metode iteratif lebih unggul dibandingkan metode rekursif dalam hal efisiensi waktu dan penggunaan memori, terutama untuk dataset berukuran besar. Hasil ini relevan untuk aplikasi seperti e-commerce yang memerlukan pencarian data cepat berbasis nama atau ID, di mana iteratif memberikan performa yang lebih andal dan hemat sumber daya.
+<br>
+Sementara itu, Bhargava (2016) dalam Grokking Algorithms menyatakan bahwa meskipun rekursif sering lebih intuitif untuk masalah tertentu, iteratif lebih sesuai dalam skenario yang menuntut efisiensi tinggi, seperti pencarian data di aplikasi praktis. Oleh karena itu, iteratif menjadi pilihan yang lebih tepat untuk menentukan algoritma pencarian tercepat dalam aplikasi e-commerce, seperti yang ditampilkan dalam poster.
+
+### referensi
+[1]Lutfina, E., Inayati, N., & Saraswati, G. W. (2022). Analisis Perbandingan Kinerja Metode Rekursif dan Metode Iteratif dalam Algoritma Linear Search. Komputika Jurnal Sistem Komputer, 11(2), 143–150. https://doi.org/10.34010/komputika.v11i2.5493
+<br>
+[2]Bhargava, A. (2016). Grokking Algorithms: An illustrated guide for programmers and other curious people. https://dl.acm.org/citation.cfm?id=3002869
