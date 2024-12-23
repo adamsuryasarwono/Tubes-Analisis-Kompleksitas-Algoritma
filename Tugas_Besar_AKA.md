@@ -236,6 +236,8 @@ Penelitian oleh Lutfina, Inayati, & Saraswati (2022) menunjukkan bahwa dalam kon
 Sementara itu, Bhargava (2016) dalam Grokking Algorithms menyatakan bahwa meskipun rekursif sering lebih intuitif untuk masalah tertentu, iteratif lebih sesuai dalam skenario yang menuntut efisiensi tinggi, seperti pencarian data di aplikasi praktis. Oleh karena itu, iteratif menjadi pilihan yang lebih tepat untuk menentukan algoritma pencarian tercepat dalam aplikasi e-commerce, seperti yang ditampilkan dalam poster.
 
 ### referensi
-[1]Lutfina, E., Inayati, N., & Saraswati, G. W. (2022). Analisis Perbandingan Kinerja Metode Rekursif dan Metode Iteratif dalam Algoritma Linear Search. Komputika Jurnal Sistem Komputer, 11(2), 143–150. https://doi.org/10.34010/komputika.v11i2.5493
+[1]Lutfina, E., Inayati, N., & Saraswati, G. W. (2022). Analisis Perbandingan Kinerja Metode Rekursif dan Metode Iteratif dalam Algoritma Linear Search. Komputika Jurnal Sistem Komputer, 11(2), 143–150.
+https://doi.org/10.34010/komputika.v11i2.5493
 <br>
-[2]Bhargava, A. (2016). Grokking Algorithms: An illustrated guide for programmers and other curious people. https://dl.acm.org/citation.cfm?id=3002869
+[2]Bhargava, A. (2016). Grokking Algorithms: An illustrated guide for programmers and other curious people. 
+https://dl.acm.org/citation.cfm?id=3002869
