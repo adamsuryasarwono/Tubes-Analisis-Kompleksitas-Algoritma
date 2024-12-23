@@ -237,7 +237,8 @@ Sementara itu, Bhargava (2016) dalam Grokking Algorithms menyatakan bahwa meskip
 
 ### referensi
 [1]Lutfina, E., Inayati, N., & Saraswati, G. W. (2022). Analisis Perbandingan Kinerja Metode Rekursif dan Metode Iteratif dalam Algoritma Linear Search. Komputika Jurnal Sistem Komputer, 11(2), 143–150.<br>
-https://doi.org/10.34010/komputika.v11i2.5493
-<br>
-[2]Bhargava, A. (2016). Grokking Algorithms: An illustrated guide for programmers and other curious people.<br> 
-https://dl.acm.org/citation.cfm?id=3002869
+https://doi.org/10.34010/komputika.v11i2.5493<br>
+[2]Bhargava, A. (2016). Grokking Algorithms: An illustrated guide for programmers and other curious people.
+https://dl.acm.org/citation.cfm?id=3002869 <br>
+[3]Santoso, A. (n.d.). Pengertian Fungsi Rekursif , Iteratif dan Perbedaannya. Only Vista.
+https://onlyvista.blogspot.com/2017/07/pengertian-fungsi-rekursif-iteratif-dan.html
